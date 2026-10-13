@@ -2,6 +2,7 @@
 // price: number in euro, a string for special pricing, or null when the price is not known.
 // Hero film: save a clip in assets/video/ and put its path here, e.g. 'assets/video/hero.mp4'. Empty = sliding photos.
 window.HERO_VIDEO = "";
+window.HERO_VIDEO_PHONE = "";   // optional lighter file for phones
 
 window.MENU = [
   {
