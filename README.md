@@ -32,4 +32,7 @@ python -m http.server 4173
 - Confirm opening hours. The restaurant's booking page says dinner Tuesday to Sunday 19:30–23:30 and lunch Wednesday to Sunday 12:30–14:00; its contact page says lunch by reservation only; Google lists lunch on Sunday only.
 - The two quotes credited “Recensione ospite” are guest reviews published on the restaurant's own site without a named platform.
 - The restaurant takes bookings online on its own site; here every booking button calls 095 097 5016. Link the booking system if the owner prefers.
+- Videos: the hero film is the restaurant's own YouTube video; the other three in the video section are by Sicily Wine & Dine, QbItaly and Cronache di Gusto, embedded from YouTube. Swap them for the restaurant's own films if it has more.
+- The press strip shows headlines listed on the restaurant's own press page. Confirm the selection.
+- The awards and timeline (star in 2018 at 25, new premises in 2023, Passion Dessert award in the 2026 guide) come from the restaurant's own site and its press page. Confirm the wording.
 - The site is hidden from search engines and carries a footer line saying it is a design proposal. To launch it, set "indexable": true and "conceptNote": false in site.json and rebuild.

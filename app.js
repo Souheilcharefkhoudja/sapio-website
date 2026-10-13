@@ -278,7 +278,7 @@
   }
 
   /* ---------- Scroll reveals ---------- */
-  const targets = $$('.head, .story__text > *, .story__art, .tabs, .menu, .menu__notes, .scores, .quotes, .ring, .ring__ui, .visit__info > *, .visit__map');
+  const targets = $$('.head, .story__text > *, .story__art, .tabs, .menu, .menu__notes, .scores, .quotes, .ring, .ring__ui, .visit__info > *, .visit__map, .laurels li, .chef__photo, .chef__text > *, .spaces .head, .cinema__screen, .cinema__list, .press');
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .04 }); // low, so sections much taller than a phone screen still reveal
     targets.forEach((el) => { el.classList.add('io'); io.observe(el); });

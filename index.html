@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it">
+<html lang="it" class="has-intro">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -29,6 +29,8 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="intro" id="intro" aria-hidden="true"><div class="intro__in"><span class="intro__mark">S</span><span class="intro__name">Sapio</span><span class="intro__line"></span><span class="intro__tag">L’estetica del gusto</span></div></div>
 
 <!-- Fixed photo background that slides on its own; every section sits on top of it. -->
 <div class="bg" aria-hidden="true">
@@ -51,6 +53,7 @@
     <a href="#galleria" data-it="Galleria" data-en="Gallery">Galleria</a>
     <a href="#storia" data-it="La storia" data-en="Our story">La storia</a>
     <a href="#menu" data-it="Menù" data-en="Menu">Menù</a>
+    <a href="#video" data-it="Video" data-en="Films">Video</a>
     <a href="#recensioni" data-it="Recensioni" data-en="Reviews">Recensioni</a>
     <a href="#contatti" data-it="Dove siamo" data-en="Find us">Dove siamo</a>
     <a class="nav__call" href="tel:+390950975016"><span data-it="Chiama per prenotare" data-en="Call to book">Chiama per prenotare</span><b>095 097 5016</b></a>
@@ -70,6 +73,8 @@
   <section class="hero">
     <!-- Plays in place of the sliding photos once HERO_VIDEO is set in menu-data.js. -->
     <video class="hero__video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true"></video>
+    <!-- A muted, looping film behind the headline; the sliding photos stay underneath until it plays. -->
+    <div class="film" id="film" data-yt="7ozbFC-QK8Y" data-start="0" data-end="0" style="--zoom:1.36; --zoom-m:1.36" aria-hidden="true"><div id="filmFrame"></div></div>
 
     <div class="hero__grid">
       <div class="hero__main">
@@ -122,6 +127,15 @@
     <p class="ring__hint" data-it="Trascina per sfogliare" data-en="Drag to browse">Trascina per sfogliare</p>
   </section>
 
+  <section class="laurels" aria-label="Riconoscimenti">
+    <ul>
+      <li><b>1</b><span data-it="Stella Michelin" data-en="Michelin star">Stella Michelin</span><small data-it="dal 2018, la prima di Catania" data-en="since 2018, Catania’s first">dal 2018, la prima di Catania</small></li>
+      <li><b>25</b><span data-it="Anni, alla stella" data-en="Years old, at the star">Anni, alla stella</span><small data-it="nel 2018, il più giovane chef stellato d’Italia" data-en="in 2018, Italy’s youngest starred chef">nel 2018, il più giovane chef stellato d’Italia</small></li>
+      <li><b>2026</b><span data-it="Premio Passion Dessert" data-en="Passion Dessert Award">Premio Passion Dessert</span><small data-it="Guida Michelin Italia" data-en="Michelin Guide Italy">Guida Michelin Italia</small></li>
+      <li><b>2016</b><span data-it="Apertura a Catania" data-en="Opened in Catania">Apertura a Catania</span><small data-it="con Roberta Cozzetto" data-en="with Roberta Cozzetto">con Roberta Cozzetto</small></li>
+    </ul>
+  </section>
+
   <section class="band" id="storia">
     <div class="wrap story">
       <div class="story__text">
@@ -143,6 +157,38 @@
     </div>
   </section>
 
+  <section class="band" id="chef">
+    <div class="wrap chef__grid">
+      <figure class="frame chef__photo"><img src="assets/img/chef-solo.webp" alt="Lo chef Alessandro Ingiulla impiatta in sala, tra i tegami di rame" loading="lazy"></figure>
+      <div class="chef__text">
+        <p class="eyebrow"><span class="orn"></span><span data-it="Lo chef" data-en="The chef">Lo chef</span></p>
+        <blockquote class="chef__quote" data-it="Guardiamo avanti, sì, ma abbiamo cura di ciò che c’è dietro. Stiamo sulle spalle dei giganti." data-en="We look ahead, yes, but we take care of what lies behind us. We stand on the shoulders of giants.">Guardiamo avanti, sì, ma abbiamo cura di ciò che c’è dietro. Stiamo sulle spalle dei giganti.</blockquote>
+        <p class="chef__by" data-it="Alessandro Ingiulla · chef e fondatore" data-en="Alessandro Ingiulla · chef and founder">Alessandro Ingiulla · chef e fondatore</p>
+        <ol class="chef__line">
+          <li><b>2016</b><span data-it="Dopo Austria e Francia, il ritorno a Catania per aprire Sapio." data-en="After Austria and France, back to Catania to open Sapio.">Dopo Austria e Francia, il ritorno a Catania per aprire Sapio.</span></li>
+          <li><b>2018</b><span data-it="La stella Michelin, a 25 anni." data-en="The Michelin star, at the age of 25.">La stella Michelin, a 25 anni.</span></li>
+          <li><b>2023</b><span data-it="La nuova casa, nel cuore di Catania." data-en="The new home, in the heart of Catania.">La nuova casa, nel cuore di Catania.</span></li>
+          <li><b>2025</b><span data-it="Il premio Passion Dessert della Guida Michelin." data-en="The Michelin Guide’s Passion Dessert award.">Il premio Passion Dessert della Guida Michelin.</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="spaces" id="spazi">
+    <div class="wrap">
+      <header class="head">
+        <p class="eyebrow"><span class="orn"></span><span data-it="Gli spazi" data-en="The spaces">Gli spazi</span><span class="orn"></span></p>
+        <h2 data-it="Una casa, &lt;em&gt;quattro luoghi&lt;/em&gt;" data-en="One house, &lt;em&gt;four places&lt;/em&gt;">Una casa, <em>quattro luoghi</em></h2>
+      </header>
+    </div>
+    <div class="spaces__row">
+      <article class="space is-on" tabindex="0"><img src="assets/img/sala.webp" alt="La sala di Sapio" loading="lazy"><span class="space__tab" data-it="La sala" data-en="The dining room">La sala</span><div class="space__in"><span class="space__n">01</span><h3 data-it="La sala" data-en="The dining room">La sala</h3><p data-it="«La nostra sala è essenziale, nel senso più stretto della parola. È il luogo dell’accoglienza.»" data-en="“Our dining room is essential, in the strictest sense of the word. It is the place of welcome.”">«La nostra sala è essenziale, nel senso più stretto della parola. È il luogo dell’accoglienza.»</p></div></article>
+      <article class="space" tabindex="0"><img src="assets/img/pass.webp" alt="Le cucine di Sapio viste dal passe" loading="lazy"><span class="space__tab" data-it="La cucina" data-en="The kitchen">La cucina</span><div class="space__in"><span class="space__n">02</span><h3 data-it="La cucina" data-en="The kitchen">La cucina</h3><p data-it="Cucine spaziose e a vista, con lo Chef’s Table per seguire la brigata da vicino." data-en="Spacious open kitchens, with the Chef’s Table to watch the brigade up close.">Cucine spaziose e a vista, con lo Chef’s Table per seguire la brigata da vicino.</p></div></article>
+      <article class="space" tabindex="0"><img src="assets/img/bottiglie.webp" alt="La cantina di Sapio" loading="lazy"><span class="space__tab" data-it="La cantina" data-en="The cellar">La cantina</span><div class="space__in"><span class="space__n">03</span><h3 data-it="La cantina" data-en="The cellar">La cantina</h3><p data-it="«Un libro composto da vari capitoli: trame e sottotrame che raccontano di uve, terroir e produttori.»" data-en="“A book made of many chapters: plots and subplots that tell of grapes, terroir and producers.”">«Un libro composto da vari capitoli: trame e sottotrame che raccontano di uve, terroir e produttori.»</p></div></article>
+      <article class="space" tabindex="0"><img src="assets/img/campagna.webp" alt="Lo chef nell’orto di famiglia" loading="lazy"><span class="space__tab" data-it="La campagna" data-en="The farm">La campagna</span><div class="space__in"><span class="space__n">04</span><h3 data-it="La campagna" data-en="The farm">La campagna</h3><p data-it="L’azienda agricola di famiglia: l’olio extravergine Elaia, l’orto e le antiche varietà di frutti etnei." data-en="The family farm: Elaia extra-virgin olive oil, the kitchen garden and old varieties of Etna fruit.">L’azienda agricola di famiglia: l’olio extravergine Elaia, l’orto e le antiche varietà di frutti etnei.</p></div></article>
+    </div>
+  </section>
+
   <section class="band band--menu" id="menu">
     <div class="wrap">
       <header class="head">
@@ -161,6 +207,28 @@
         <p data-it="Vista la complessità dei percorsi degustazione, il menù deve essere uguale per tutti i commensali al tavolo." data-en="Given the complexity of the tasting menus, the whole table is asked to choose the same menu.">Vista la complessità dei percorsi degustazione, il menù deve essere uguale per tutti i commensali al tavolo.</p>
         <p data-it="Allergeni: si prega di comunicare al personale di sala eventuali allergie o intolleranze prima dell’ordinazione." data-en="Allergens: please tell our staff about any allergy or intolerance before ordering.">Allergeni: si prega di comunicare al personale di sala eventuali allergie o intolleranze prima dell’ordinazione.</p>
         <p data-it="* Prodotto congelato o surgelato all’origine. I prodotti della pesca serviti crudi sono sottoposti ad abbattimento di temperatura." data-en="* Product frozen at origin. Fish served raw is blast-chilled beforehand.">* Prodotto congelato o surgelato all’origine. I prodotti della pesca serviti crudi sono sottoposti ad abbattimento di temperatura.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--tight cinema" id="video">
+    <div class="wrap">
+      <header class="head">
+        <p class="eyebrow"><span class="orn"></span><span data-it="In video" data-en="On film">In video</span><span class="orn"></span></p>
+        <h2 data-it="Sapio, &lt;em&gt;in movimento&lt;/em&gt;" data-en="Sapio, &lt;em&gt;in motion&lt;/em&gt;">Sapio, <em>in movimento</em></h2>
+      </header>
+      <!-- The film starts by itself, without sound, when it scrolls into view, and moves on to the next one when it ends. -->
+      <div id="cinema">
+        <div class="cinema__screen">
+          <div class="cinema__ratio"><div id="cinemaFrame"></div><button class="cinema__hit" id="cinemaHit" type="button" aria-label="Pausa / riproduci"></button><div class="cinema__bar"><i id="cinemaFill"></i></div></div>
+          <div class="cinema__meta"><p class="cinema__now" id="cinemaNow"><b></b><small></small></p><button class="cinema__sound" id="cinemaSound" type="button"></button></div>
+        </div>
+        <ol class="cinema__list" style="--n:4">
+          <li><button class="cinema__item" type="button" data-yt="7ozbFC-QK8Y" data-start="0" data-title-it="L’estetica del gusto" data-title-en="The aesthetics of taste" data-src="Sapio Restaurant"><span class="cinema__thumb"><img src="https://i.ytimg.com/vi/7ozbFC-QK8Y/mqdefault.jpg" alt="" loading="lazy"><em>0:33</em></span><span class="cinema__cap"><b data-it="L’estetica del gusto" data-en="The aesthetics of taste">L’estetica del gusto</b><small>Sapio Restaurant</small></span></button></li>
+          <li><button class="cinema__item" type="button" data-yt="3iGZxuGN5qI" data-start="0" data-title-it="Fine dining a Catania" data-title-en="Fine dining in Catania" data-src="Sicily Wine &amp; Dine"><span class="cinema__thumb"><img src="https://i.ytimg.com/vi/3iGZxuGN5qI/mqdefault.jpg" alt="" loading="lazy"><em>1:46</em></span><span class="cinema__cap"><b data-it="Fine dining a Catania" data-en="Fine dining in Catania">Fine dining a Catania</b><small>Sicily Wine &amp; Dine</small></span></button></li>
+          <li><button class="cinema__item" type="button" data-yt="91ohzqkeQvY" data-start="0" data-title-it="Catania ha la sua prima stella" data-title-en="Catania has its first star" data-src="QbItaly"><span class="cinema__thumb"><img src="https://i.ytimg.com/vi/91ohzqkeQvY/mqdefault.jpg" alt="" loading="lazy"><em>4:00</em></span><span class="cinema__cap"><b data-it="Catania ha la sua prima stella" data-en="Catania has its first star">Catania ha la sua prima stella</b><small>QbItaly</small></span></button></li>
+          <li><button class="cinema__item" type="button" data-yt="lzJckvCH67g" data-start="0" data-title-it="Lo chef stellato più giovane d’Italia" data-title-en="Italy’s youngest starred chef" data-src="Cronache di Gusto"><span class="cinema__thumb"><img src="https://i.ytimg.com/vi/lzJckvCH67g/mqdefault.jpg" alt="" loading="lazy"><em>2:29</em></span><span class="cinema__cap"><b data-it="Lo chef stellato più giovane d’Italia" data-en="Italy’s youngest starred chef">Lo chef stellato più giovane d’Italia</b><small>Cronache di Gusto</small></span></button></li>
+        </ol>
       </div>
     </div>
   </section>
@@ -206,6 +274,19 @@
 
     <div class="wrap center">
       <a class="btn btn--line" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Sapio%20Restaurant%20Catania&amp;query_place_id=ChIJj33ntLf8ExMRhyrf5SRYd_A" data-it="Leggi tutte le recensioni su Google" data-en="Read all reviews on Google">Leggi tutte le recensioni su Google</a>
+    </div>
+    <div class="wrap press">
+      <p class="press__label" data-it="La stampa" data-en="In the press">La stampa</p>
+    </div>
+    <div class="press__strip">
+      <div class="press__track">
+        <figure class="press__item"><b>Reporter Gourmet</b><span>Sapio, la prima stella Michelin di Catania che brilla ai piedi del Vulcano</span><small>28/10/2025</small></figure>
+        <figure class="press__item"><b>Food&amp;Wine</b><span>Lo chef agricoltore ed esteta con l’ossessione del buono e del bello</span><small>28/10/2025</small></figure>
+        <figure class="press__item"><b>Identità Golose</b><span>Sapio alla riscoperta della memoria selvatica e agreste della Sicilia</span><small>27/02/2026</small></figure>
+        <figure class="press__item"><b>Wine in Sicily</b><span>A Sapio il premio “Passion Dessert” della Guida Michelin</span><small>19/11/2025</small></figure>
+        <figure class="press__item"><b>La Sicilia</b><span>Una tavola “stellata” che in Sicilia non trema, la costanza è la sua cifra</span><small>20/11/2025</small></figure>
+        <figure class="press__item"><b>ANSA</b><span>Guida Michelin Italia, premio Passion Dessert a 8 ristoranti</span><small>19/11/2025</small></figure>
+      </div>
     </div>
   </section>
 
@@ -254,5 +335,6 @@
 <script src="site-data.js"></script>
 <script src="menu-data.js"></script>
 <script src="app.js"></script>
+<script src="extras.js"></script>
 </body>
 </html>
