@@ -31,7 +31,8 @@
   }
 
   /* ---------- YouTube: one loader shared by the hero film and the cinema ---------- */
-  const film = $('#film'), cinema = $('#cinema');
+  // A video file hosted with the site (HERO_VIDEO) always wins over the YouTube film: it starts faster and shows no player.
+  const film = window.HERO_VIDEO ? null : $('#film'), cinema = $('#cinema');
   if (!film && !cinema) return;
   let api;
   const youtube = () => api || (api = new Promise((res) => {

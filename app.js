@@ -156,11 +156,15 @@
   // Portrait screens open on the photo chosen for them in site.json (slides -> phoneFirst); wide screens on the first.
   show(phone && matchMedia('(orientation: portrait)').matches ? (window.SITE.phoneFirst || 0) : 0); play();
 
-  /* ---------- Hero film: set HERO_VIDEO in menu-data.js once the file exists ---------- */
+  /* ---------- Hero film: a video file of your own, set as HERO_VIDEO in menu-data.js. It plays muted and looping. ---------- */
   if (window.HERO_VIDEO) {
     const video = $('#heroVideo');
+    // Phones get the lighter file when there is one.
+    const file = (phone && window.HERO_VIDEO_PHONE) || window.HERO_VIDEO;
     video.addEventListener('canplay', () => { $('.hero').classList.add('has-video'); video.play().catch(() => {}); }, { once: true });
-    video.src = window.HERO_VIDEO;
+    video.src = file; video.load();
+    // It only runs while the hero is on screen.
+    if ('IntersectionObserver' in window) new IntersectionObserver((es) => { es[0].isIntersecting ? video.play().catch(() => {}) : video.pause(); }, { threshold: .1 }).observe($('.hero'));
   }
 
   /* ---------- Nav ---------- */
