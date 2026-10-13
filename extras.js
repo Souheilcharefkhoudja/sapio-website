@@ -60,7 +60,10 @@
       });
       // Jump back just before the end, so the loop never shows YouTube's end screen.
       setInterval(() => {
-        if (!ready || !visible || !player.getDuration) return;
+        if (!ready || !visible || document.hidden || !player.getDuration) return;
+        // A film that was held back (slow network, a tab opened in the background) is started again.
+        const st = player.getPlayerState();
+        if (st === -1 || st === 2 || st === 5) player.playVideo();
         const stop = end || player.getDuration() - .45;
         if (stop > 0 && player.getCurrentTime() >= stop) player.seekTo(start, true);
       }, 250);
@@ -100,7 +103,9 @@
           },
         });
         setInterval(() => {
-          if (!ready || !inView || !player.getDuration) return;
+          if (!ready || !inView || document.hidden || !player.getDuration) return;
+          const st = player.getPlayerState();
+          if (!paused && (st === -1 || st === 5)) player.playVideo();
           const d = player.getDuration();
           if (d > 0) fill.style.transform = `scaleX(${Math.min(1, player.getCurrentTime() / d).toFixed(4)})`;
         }, 300);
