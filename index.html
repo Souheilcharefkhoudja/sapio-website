@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>Sapio Restaurant – Una stella Michelin a Catania | Menù degustazione e prenotazioni</title>
+<meta name="description" content="Sapio Restaurant, una stella Michelin a Catania: la cucina etnea dello chef Alessandro Ingiulla. Percorsi degustazione, cantina siciliana, Chef’s Table, orari e prenotazioni.">
+<meta name="theme-color" content="#251813">
+<!-- Concept preview: kept out of search engines until the restaurant approves it. Set "indexable": true in site.json at launch. -->
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://souheilcharefkhoudja.github.io/sapio-website/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="assets/img/bg-cucina.webp" media="(min-width: 641px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/img/bg-praline-m.webp" media="(max-width: 640px) and (orientation: portrait)" fetchpriority="high">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
+<meta property="og:type" content="restaurant">
+<meta property="og:site_name" content="Sapio">
+<meta property="og:title" content="Sapio Restaurant · L’estetica del gusto · Catania">
+<meta property="og:description" content="La cucina etnea dello chef Alessandro Ingiulla. Una stella Michelin in Piazza Antonino Gandolfo, Catania.">
+<meta property="og:url" content="https://souheilcharefkhoudja.github.io/sapio-website/">
+<meta property="og:image" content="https://souheilcharefkhoudja.github.io/sapio-website/assets/img/og.jpg">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Sapio Restaurant", "url": "https://souheilcharefkhoudja.github.io/sapio-website/", "image": ["https://souheilcharefkhoudja.github.io/sapio-website/assets/img/bg-cucina.webp", "https://souheilcharefkhoudja.github.io/sapio-website/assets/img/ingresso.webp"], "telephone": "+39 095 097 5016", "priceRange": "€€€€", "servesCuisine": ["Sicilian", "Modern", "Fine dining"], "address": {"@type": "PostalAddress", "streetAddress": "Piazza Antonino Gandolfo, 11", "postalCode": "95131", "addressLocality": "Catania", "addressRegion": "CT", "addressCountry": "IT"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "19:30", "closes": "23:30"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "12:30", "closes": "14:00"}], "hasMenu": "https://souheilcharefkhoudja.github.io/sapio-website/#menu", "acceptsReservations": true, "sameAs": ["https://www.instagram.com/sapio_restaurant/", "https://www.facebook.com/sapiorestaurant/"], "geo": {"@type": "GeoCoordinates", "latitude": 37.5053235, "longitude": 15.0948284}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Fixed photo background that slides on its own; every section sits on top of it. -->
+<div class="bg" aria-hidden="true">
+  <div class="bg__slide" data-img="cucina" style="--pos:50% 45%; --pos-m:62% 50%"></div>
+  <div class="bg__slide" data-img="praline" style="--pos:50% 55%; --pos-m:50% 50%"></div>
+  <div class="bg__slide" data-img="sala" style="--pos:50% 55%; --pos-m:55% 50%"></div>
+  <div class="bg__slide" data-img="piccione" style="--pos:50% 50%; --pos-m:50% 50%"></div>
+  <div class="bg__slide" data-img="cantina" style="--pos:50% 50%; --pos-m:35% 50%"></div>
+  <div class="bg__slide" data-img="cortile" style="--pos:50% 55%; --pos-m:58% 50%"></div>
+  <div class="bg__veil"></div>
+  <div class="bg__grain"></div>
+</div>
+
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top" aria-label="Sapio">
+    <span class="nav__mark">S</span>
+    <span class="nav__name">Sapio</span>
+  </a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#galleria" data-it="Galleria" data-en="Gallery">Galleria</a>
+    <a href="#storia" data-it="La storia" data-en="Our story">La storia</a>
+    <a href="#menu" data-it="Menù" data-en="Menu">Menù</a>
+    <a href="#recensioni" data-it="Recensioni" data-en="Reviews">Recensioni</a>
+    <a href="#contatti" data-it="Dove siamo" data-en="Find us">Dove siamo</a>
+    <a class="nav__call" href="tel:+390950975016"><span data-it="Chiama per prenotare" data-en="Call to book">Chiama per prenotare</span><b>095 097 5016</b></a>
+  </nav>
+  <div class="nav__side">
+    <div class="lang" role="group" aria-label="Lingua / Language">
+      <button type="button" data-lang="it" class="is-on">IT</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+    <a class="btn btn--solid btn--sm" href="tel:+390950975016" data-it="Prenota" data-en="Book">Prenota</a>
+    <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <!-- Plays in place of the sliding photos once HERO_VIDEO is set in menu-data.js. -->
+    <video class="hero__video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true"></video>
+
+    <div class="hero__grid">
+      <div class="hero__main">
+        <p class="hero__kinds reveal" style="--d:.15s"><span>Una stella Michelin</span><span>Cucina etnea</span><span>Catania</span></p>
+        <h1 class="hero__title reveal" style="--d:.3s" data-it="L’estetica&lt;br&gt;&lt;em&gt;del gusto.&lt;/em&gt;" data-en="The aesthetics&lt;br&gt;&lt;em&gt;of taste.&lt;/em&gt;">L’estetica<br><em>del gusto.</em></h1>
+      </div>
+      <div class="hero__side reveal" style="--d:.6s">
+        <p class="hero__lead" data-it="La cucina etnea raccontata dallo chef Alessandro Ingiulla, tra il fuoco dell’Etna e le onde dello Ionio." data-en="Etna’s cuisine as told by chef Alessandro Ingiulla, between the fire of the volcano and the waves of the Ionian Sea.">La cucina etnea raccontata dallo chef Alessandro Ingiulla, tra il fuoco dell’Etna e le onde dello Ionio.</p>
+        <div class="hero__cta">
+          <a class="btn btn--solid btn--dash" href="#menu"><span data-it="Scopri" data-en="See">Scopri</span><i></i><span data-it="il menù" data-en="the menu">il menù</span></a>
+          <a class="btn btn--line btn--dash" href="tel:+390950975016"><span data-it="Prenota" data-en="Book">Prenota</span><i></i><span data-it="un tavolo" data-en="a table">un tavolo</span></a>
+        </div>
+      </div>
+    </div>
+
+    <ul class="hero__facts reveal" style="--d:.85s">
+      <li><b data-it="Cena · Mar–Dom" data-en="Dinner · Tue–Sun">Cena · Mar–Dom</b><span>19:30 – 23:30</span></li>
+      <li><b>4,7 / 5</b><span data-it="374 recensioni Google" data-en="374 reviews Google">374 recensioni Google</span></li>
+      <li><b data-it="Una stella Michelin" data-en="One Michelin star">Una stella Michelin</b><span>Piazza A. Gandolfo, 11</span></li>
+      <li class="hero__dots"><span class="bg-count" id="bgCount" aria-hidden="true"></span><div class="bg-dots" id="bgDots" aria-hidden="true"></div></li>
+    </ul>
+  </section>
+
+  <section class="band band--tight stage" id="galleria">
+    <div class="wrap">
+      <header class="head">
+        <p class="eyebrow"><span class="orn"></span><span data-it="Galleria" data-en="Gallery">Galleria</span><span class="orn"></span></p>
+        <h2 data-it="Dalla terra &lt;em&gt;al piatto&lt;/em&gt;" data-en="From the land &lt;em&gt;to the plate&lt;/em&gt;">Dalla terra <em>al piatto</em></h2>
+      </header>
+    </div>
+    <!-- A 3D cover flow of photos that moves on its own; drag, swipe, tap a photo or use the arrows. -->
+    <div class="ring" id="ring">
+      <div class="ring__spin">
+        <figure class="ring__card"><img src="assets/img/card-piccione.webp" alt="Piccione laccato su piatto dorato" width="720" height="960" decoding="async" draggable="false"><figcaption data-it="Piccione in conca" data-en="Pigeon, as it once was">Piccione in conca</figcaption></figure>
+        <figure class="ring__card"><img src="assets/img/card-triglia.webp" alt="Triglia allo scoglio con il suo sugo ristretto" width="720" height="960" decoding="async" draggable="false"><figcaption data-it="Triglia allo scoglio" data-en="Red mullet “allo scoglio”">Triglia allo scoglio</figcaption></figure>
+        <figure class="ring__card"><img src="assets/img/card-gambero.webp" alt="Crudo di gambero rosso sotto una spuma verde" width="720" height="960" decoding="async" draggable="false"><figcaption data-it="Gambero affogato" data-en="“Drowned” red prawn">Gambero affogato</figcaption></figure>
+        <figure class="ring__card"><img src="assets/img/card-sala.webp" alt="La sala di Sapio, con le lampade ad arco e la parete in pietra lavica" width="720" height="960" decoding="async" draggable="false"><figcaption data-it="La sala" data-en="The dining room">La sala</figcaption></figure>
+        <figure class="ring__card"><img src="assets/img/card-peperone.webp" alt="Peperone arrosto" width="720" height="960" decoding="async" draggable="false"><figcaption data-it="Peperone arrosto" data-en="Roasted pepper">Peperone arrosto</figcaption></figure>
+        <figure class="ring__card"><img src="assets/img/card-praline.webp" alt="Piccola pasticceria su blocchi di legno" width="720" height="960" decoding="async" draggable="false"><figcaption data-it="Piccola pasticceria" data-en="Petit fours">Piccola pasticceria</figcaption></figure>
+        <figure class="ring__card"><img src="assets/img/card-tenerumi.webp" alt="Tenerumi, ricotta e cozze" width="720" height="960" decoding="async" draggable="false"><figcaption data-it="Tenerumi, ricotta e cozze" data-en="Tenerumi, ricotta and mussels">Tenerumi, ricotta e cozze</figcaption></figure>
+        <figure class="ring__card"><img src="assets/img/card-ravioli.webp" alt="Ravioli tagliati a mano" width="720" height="960" decoding="async" draggable="false"><figcaption data-it="La pasta, fatta a mano" data-en="Pasta, made by hand">La pasta, fatta a mano</figcaption></figure>
+        <figure class="ring__card"><img src="assets/img/card-granchio.webp" alt="Granchio blu" width="720" height="960" decoding="async" draggable="false"><figcaption data-it="Granchio blu" data-en="Blue crab">Granchio blu</figcaption></figure>
+      </div>
+    </div>
+    <div class="ring__ui">
+      <button class="ring__btn" id="ringPrev" type="button" aria-label="Foto precedente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></button>
+      <p class="ring__now" aria-live="polite"><span class="ring__count" id="ringCount"></span><span class="ring__cap" id="ringCap"></span></p>
+      <button class="ring__btn" id="ringNext" type="button" aria-label="Foto successiva"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+    </div>
+    <p class="ring__hint" data-it="Trascina per sfogliare" data-en="Drag to browse">Trascina per sfogliare</p>
+  </section>
+
+  <section class="band" id="storia">
+    <div class="wrap story">
+      <div class="story__text">
+        <p class="eyebrow"><span class="orn"></span><span data-it="La storia" data-en="Our story">La storia</span></p>
+        <h2 data-it="Sapore e sapere, &lt;em&gt;dalla terra.&lt;/em&gt;" data-en="Flavour and knowledge, &lt;em&gt;from the land.&lt;/em&gt;">Sapore e sapere, <em>dalla terra.</em></h2>
+        <p class="lede" data-it="Sapio, dal latino, esprime l’affinità tra sapore e sapere. Lo chef Alessandro Ingiulla e Roberta Cozzetto lo hanno aperto a Catania nel 2016: è il primo ristorante della città con una stella Michelin." data-en="Sapio, from Latin, expresses the kinship between flavour and knowledge. Chef Alessandro Ingiulla and Roberta Cozzetto opened it in Catania in 2016: it is the city’s first restaurant with a Michelin star.">Sapio, dal latino, esprime l’affinità tra sapore e sapere. Lo chef Alessandro Ingiulla e Roberta Cozzetto lo hanno aperto a Catania nel 2016: è il primo ristorante della città con una stella Michelin.</p>
+        <p data-it="La cucina racconta il territorio etneo con l’olio, la frutta e le verdure dell’azienda agricola di famiglia e con i piccoli produttori locali. La sala, in un vecchio magazzino ristrutturato nel 2023, ospita anche esposizioni di artisti locali; la cantina mette la Sicilia al centro, dall’Etna alle sue tre valli." data-en="The kitchen tells the story of Etna’s land with oil, fruit and vegetables from the family farm and from small local producers. The dining room, in an old warehouse renovated in 2023, also hosts exhibitions by local artists; the cellar puts Sicily first, from Etna to its three valleys.">La cucina racconta il territorio etneo con l’olio, la frutta e le verdure dell’azienda agricola di famiglia e con i piccoli produttori locali. La sala, in un vecchio magazzino ristrutturato nel 2023, ospita anche esposizioni di artisti locali; la cantina mette la Sicilia al centro, dall’Etna alle sue tre valli.</p>
+        <ul class="pillars">
+          <li><b>01</b><span data-it="Tre percorsi degustazione e la carta" data-en="Three tasting menus and à la carte">Tre percorsi degustazione e la carta</span></li>
+          <li><b>02</b><span data-it="Chef’s Table in cucina e tavolo in cantina" data-en="Chef’s Table in the kitchen and a table in the cellar">Chef’s Table in cucina e tavolo in cantina</span></li>
+          <li><b>03</b><span data-it="Orto, oliveto e produttori locali" data-en="Kitchen garden, olive grove and local producers">Orto, oliveto e produttori locali</span></li>
+        </ul>
+      </div>
+      <div class="story__art">
+        <figure class="frame frame--tall"><img src="assets/img/ingresso.webp" alt="L’ingresso di Sapio, tra pietra lavica e legno" loading="lazy"></figure>
+        <figure class="frame frame--small"><img src="assets/img/chef.webp" alt="Lo chef Alessandro Ingiulla e Roberta Cozzetto in cantina" loading="lazy"></figure>
+        <span class="seal" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#circ">SAPIO · L’ESTETICA DEL GUSTO · CATANIA · </textPath></text></svg><i>S</i></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--menu" id="menu">
+    <div class="wrap">
+      <header class="head">
+        <p class="eyebrow"><span class="orn"></span><span data-it="La carta" data-en="The menu">La carta</span><span class="orn"></span></p>
+        <h2 data-it="Il nostro <em>menù</em>" data-en="Our <em>menu</em>">Il nostro <em>menù</em></h2>
+      </header>
+
+      <div class="tabs" id="tabs" role="tablist"></div>
+
+      <div class="menu">
+        <div class="menu__list" id="menuList" aria-live="polite"></div>
+        <aside class="fixed" id="fixedMenu"></aside>
+      </div>
+
+      <div class="menu__notes">
+        <p data-it="Vista la complessità dei percorsi degustazione, il menù deve essere uguale per tutti i commensali al tavolo." data-en="Given the complexity of the tasting menus, the whole table is asked to choose the same menu.">Vista la complessità dei percorsi degustazione, il menù deve essere uguale per tutti i commensali al tavolo.</p>
+        <p data-it="Allergeni: si prega di comunicare al personale di sala eventuali allergie o intolleranze prima dell’ordinazione." data-en="Allergens: please tell our staff about any allergy or intolerance before ordering.">Allergeni: si prega di comunicare al personale di sala eventuali allergie o intolleranze prima dell’ordinazione.</p>
+        <p data-it="* Prodotto congelato o surgelato all’origine. I prodotti della pesca serviti crudi sono sottoposti ad abbattimento di temperatura." data-en="* Product frozen at origin. Fish served raw is blast-chilled beforehand.">* Prodotto congelato o surgelato all’origine. I prodotti della pesca serviti crudi sono sottoposti ad abbattimento di temperatura.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="recensioni">
+    <div class="wrap">
+      <header class="head">
+        <p class="eyebrow"><span class="orn"></span><span data-it="Dicono di noi" data-en="What guests say">Dicono di noi</span><span class="orn"></span></p>
+        <h2 data-it="Le <em>recensioni</em>" data-en="The <em>reviews</em>">Le <em>recensioni</em></h2>
+      </header>
+
+      <div class="scores">
+        <div class="score">
+          <div class="score__num">4,7<small>/5</small></div>
+          <div class="stars" style="--v:4.7" aria-label="4,7/5"></div>
+          <div class="score__src">Google</div>
+          <div class="score__n" data-it="374 recensioni" data-en="374 reviews">374 recensioni</div>
+        </div>
+        <div class="score">
+          <div class="score__num">9,6<small>/10</small></div>
+          <div class="stars" style="--v:4.8" aria-label="9,6/10"></div>
+          <div class="score__src">TheFork</div>
+          <div class="score__n" data-it="241 recensioni" data-en="241 reviews">241 recensioni</div>
+        </div>
+        <div class="score">
+          <div class="score__num">4,6<small>/5</small></div>
+          <div class="stars" style="--v:4.6" aria-label="4,6/5"></div>
+          <div class="score__src">Tripadvisor</div>
+          <div class="score__n" data-it="218 recensioni" data-en="218 reviews">218 recensioni</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quotes" id="quotes">
+      <div class="quotes__track">
+        <figure class="quote"><div class="stars" style="--v:5"></div><blockquote>Una cucina matura, che esalta le migliori produzioni siciliane.</blockquote><figcaption>Guida Michelin</figcaption></figure>
+        <figure class="quote"><div class="stars" style="--v:5"></div><blockquote>Ingredienti di elevata qualità, passione nella ricercatezza e negli abbinamenti.</blockquote><figcaption>Google</figcaption></figure>
+        <figure class="quote"><div class="stars" style="--v:5"></div><blockquote>Esperienza culinaria sublime. Tutto curato e raffinato nei minimi dettagli.</blockquote><figcaption>Recensione ospite</figcaption></figure>
+        <figure class="quote"><div class="stars" style="--v:5"></div><blockquote>Una bellissima serata, ottimo cibo e buon vino.</blockquote><figcaption>Google</figcaption></figure>
+        <figure class="quote"><div class="stars" style="--v:5"></div><blockquote>Una cucina geniale!</blockquote><figcaption>Recensione ospite</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="wrap center">
+      <a class="btn btn--line" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Sapio%20Restaurant%20Catania&amp;query_place_id=ChIJj33ntLf8ExMRhyrf5SRYd_A" data-it="Leggi tutte le recensioni su Google" data-en="Read all reviews on Google">Leggi tutte le recensioni su Google</a>
+    </div>
+  </section>
+
+  <section class="band" id="contatti">
+    <div class="wrap visit">
+      <div class="visit__info">
+        <p class="eyebrow"><span class="orn"></span><span data-it="Dove siamo" data-en="Find us">Dove siamo</span></p>
+        <h2 data-it="Vi aspettiamo &lt;em&gt;in Piazza Gandolfo.&lt;/em&gt;" data-en="We’re waiting for you &lt;em&gt;in Piazza Gandolfo.&lt;/em&gt;">Vi aspettiamo <em>in Piazza Gandolfo.</em></h2>
+
+        <dl class="facts">
+          <div><dt data-it="Indirizzo" data-en="Address">Indirizzo</dt><dd>Piazza Antonino Gandolfo, 11<br>95131 Catania</dd></div>
+          <div><dt data-it="Orari" data-en="Hours">Orari</dt><dd><span data-it="Lun chiuso" data-en="Mon closed">Lun chiuso</span><br><span data-it="Mar" data-en="Tue">Mar</span> 19:30 – 23:30<br><span data-it="Mer–Dom" data-en="Wed–Sun">Mer–Dom</span> 12:30 – 14:00 · 19:30 – 23:30 <span class="open" id="openNow"></span></dd></div>
+          <div><dt data-it="Telefono" data-en="Phone">Telefono</dt><dd><a href="tel:+390950975016">095 097 5016</a><br><a href="tel:+393501947542">350 194 7542</a></dd></div>
+          <div><dt>Social</dt><dd><a href="https://www.instagram.com/sapio_restaurant/" target="_blank" rel="noopener">Instagram</a><br><a href="https://www.facebook.com/sapiorestaurant/" target="_blank" rel="noopener">Facebook</a></dd></div>
+        </dl>
+
+        <div class="visit__cta">
+          <a class="btn btn--solid" href="tel:+390950975016" data-it="Chiama per prenotare" data-en="Call to book">Chiama per prenotare</a>
+          <a class="btn btn--line" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=Sapio%20Restaurant%20Catania&amp;destination_place_id=ChIJj33ntLf8ExMRhyrf5SRYd_A" data-it="Indicazioni" data-en="Directions">Indicazioni</a>
+        </div>
+      </div>
+      <div class="visit__map frame">
+        <iframe title="Mappa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Sapio+Restaurant+Catania%2C+Piazza+Antonino+Gandolfo%2C+11%2C+Catania&amp;z=17&amp;output=embed"></iframe>
+        <a class="visit__open" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Sapio%20Restaurant%20Catania&amp;query_place_id=ChIJj33ntLf8ExMRhyrf5SRYd_A"><span data-it="Apri in Google Maps" data-en="Open in Google Maps">Apri in Google Maps</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__name">Sapio</div>
+  <p>Una stella Michelin · Cucina etnea — Piazza Antonino Gandolfo, 11 · 95131 Catania · <a href="tel:+390950975016">095 097 5016</a></p>
+  <p class="foot__small">© <span id="year"></span> Sapio</p>
+  <p class="foot__small" data-it="Proposta di design · non è il sito ufficiale del ristorante" data-en="Design proposal · not the restaurant’s official website">Proposta di design · non è il sito ufficiale del ristorante</p>
+
+</footer>
+
+<nav class="dock" aria-label="Azioni rapide">
+  <a class="dock__call" href="tel:+390950975016"><span data-it="Prenota" data-en="Book">Prenota</span><b>095 097 5016</b></a>
+  <a class="dock__btn" href="#menu" data-it="Menù" data-en="Menu">Menù</a>
+  <a class="dock__btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=Sapio%20Restaurant%20Catania&amp;destination_place_id=ChIJj33ntLf8ExMRhyrf5SRYd_A" data-it="Mappa" data-en="Map">Mappa</a>
+</nav>
+
+<script src="site-data.js"></script>
+<script src="menu-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
